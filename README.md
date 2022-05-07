@@ -5,9 +5,9 @@
   with Sequelize ORM. In this project, we will use <code>yarn</code> for node package management.
 </p>
 
-## dependencies
+### dependencies
 
-.["express": "^4.18.1").
+- ["express": "^4.18.1").
 
 ### Setup Guide
 
