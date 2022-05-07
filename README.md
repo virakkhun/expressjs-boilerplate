@@ -7,7 +7,13 @@
 
 ### dependencies
 
-- ["express": "^4.18.1"].
+- [express].
+- [cors]
+- [body-parser].
+- [dotenv].
+- [sequelize].
+- ["mysql2]
+- [nodemon].
 
 ### Setup Guide
 
