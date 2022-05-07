@@ -1,9 +1,8 @@
 # API Boilerplate For Building API with ExpressJS
 
-
 <p align="start">
-  This is a boilerplate for implementing API using <code>ExpressJS</code> Node.js framework and MySql DBMS
-  with Sequelize ORM. In this project, we will use <code>yarn</code> for node package management.
+  This is a boilerplate for implementing API using <code>ExpressJS</code> Node.js framework and <code>mysql</code> DBMS
+  with <code>Sequelize</code> ORM. In this project, we will use <code>yarn</code> for node package management.
 </p>
 
 ### dependencies
