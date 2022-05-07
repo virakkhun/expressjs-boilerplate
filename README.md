@@ -7,13 +7,13 @@
 
 ### dependencies
 
-- [express].
-- [cors]
-- [body-parser].
-- [dotenv].
-- [sequelize].
-- ["mysql2]
-- [nodemon].
+- [ express ].
+- [ cors ]
+- [ body-parser ].
+- [ dotenv ].
+- [ sequelize ].
+- [ mysql2 ]
+- [ nodemon ].
 
 ### Setup Guide
 
