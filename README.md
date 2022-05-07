@@ -1,1 +1,1 @@
-<p align="center"> ExpressJS || Sequelize ORM || MySql </p>
+<p align="center"> ExpressJS - Sequelize ORM - MySql </p>
