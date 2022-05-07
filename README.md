@@ -12,15 +12,21 @@
   <code>.env</code> and make sure you put your own database configuration and the last thing you are going to do is run <code>yarn install</code> to install the dependencies.
 
 </p>
+
 ``` bash
+# clone the repository
 $ git clone https://github.com/virakkhun/expressjs-boilerplate-sequelize-mysql.git
+# go into the repository
 $ cd expressjs-boilerplate-sequelize-mysql
+# copy the .env.example to .env
 $ cp .env.example .env
+# install the dependencies
 $ yarn install
 ```
 
 ### Run Project
-<p>To run the project please run the following command.
+
 ``` bash
+# to run the project
 $ yarn start 
 ```
