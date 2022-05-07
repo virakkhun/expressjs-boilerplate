@@ -1,4 +1,4 @@
-<p align="center"> ExpressJS - Sequelize ORM - MySql </p>
+<p align="center"> API For Building API with ExpressJS </p>
 
 <p align="start">
   This is a boilerplate for implementing API using <code>ExpressJS</code> Node.js framework and MySql DBMS
@@ -40,3 +40,7 @@ $ yarn install
 # to run the project
 $ yarn start
 ```
+
+Open you browser and paste the below url into the search bar
+
+<code> localhost:3000/hello </code>
