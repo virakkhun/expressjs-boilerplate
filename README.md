@@ -1,4 +1,6 @@
-<p align="center"> API For Building API with ExpressJS </p>
+# API Boilerplate For Building API with ExpressJS
+
+______________________________________________________________________________________________________________________
 
 <p align="start">
   This is a boilerplate for implementing API using <code>ExpressJS</code> Node.js framework and MySql DBMS
