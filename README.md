@@ -8,12 +8,12 @@
 ### dependencies
 
 - [express](https://expressjs.com/).
-- [cors](https://yarnpkg.com/package/cors)
-- [body-parser].
-- [dotenv].
-- [sequelize].
-- [mysql2]
-- [nodemon].
+- [cors](https://yarnpkg.com/package/cors).
+- [body-parser](https://yarnpkg.com/package/body-parser).
+- [dotenv](https://yarnpkg.com/package/dotenv).
+- [sequelize](https://sequelize.org/).
+- [mysql2](https://yarnpkg.com/package/mysql2)
+- [nodemon](https://yarnpkg.com/package/nodemon).
 
 ### Setup Guide
 
