@@ -43,5 +43,5 @@ $ yarn start
 Open you browser and paste the below url into the search bar
 
 <code> 
-  <a href="http://localhost:3000/user">localhost:3000/hello</a> 
+  <a href="http://localhost:3000/user" target="_blank">http://localhost:3000/user/your_own_name</a> 
 </code>
