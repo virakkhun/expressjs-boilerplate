@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const connections = require("./database/config.db");
 
-const helloRoute = require("./routes/helloRoute");
+const helloRoute = require("./routes/userRoute");
 
 const corsOptions = {
   origin: process.env.CORS_URL,
