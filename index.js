@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/hello", helloRoute);
+app.use("/user", helloRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

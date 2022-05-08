@@ -9,7 +9,6 @@
 
 - [express](https://expressjs.com/).
 - [cors](https://yarnpkg.com/package/cors).
-- [body-parser](https://yarnpkg.com/package/body-parser).
 - [dotenv](https://yarnpkg.com/package/dotenv).
 - [sequelize](https://sequelize.org/).
 - [mysql2](https://yarnpkg.com/package/mysql2)
@@ -43,4 +42,6 @@ $ yarn start
 
 Open you browser and paste the below url into the search bar
 
-<code> localhost:3000/hello </code>
+<code> 
+  <a href="http://localhost:3000/user">localhost:3000/hello</a> 
+</code>
