@@ -1,4 +1,4 @@
-# API Boilerplate For Building API with ExpressJS
+# ExpressJs Boilerplate For Building API with Sequelize ORM && mysql RDBMS
 
 <p align="start">
   This is a boilerplate for implementing API using <code>ExpressJS</code> Node.js framework and <code>mysql</code> DBMS
