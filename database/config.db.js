@@ -20,4 +20,7 @@ const connect = async () => {
   }
 };
 
-module.exports = connect;
+module.exports = {
+  sequelize,
+  connect,
+};

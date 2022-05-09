@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const connections = require("./database/config.db");
+const db = require("./database/config.db");
 
 const helloRoute = require("./routes/userRoute");
 
@@ -9,7 +9,8 @@ const corsOptions = {
   origin: process.env.CORS_URL,
 };
 
-connections(cors(corsOptions));
+db.connect(cors(corsOptions));
+db.sequelize.sync();
 
 app.use(cors());
 app.use(express.json());
