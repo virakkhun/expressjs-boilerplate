@@ -3,7 +3,7 @@ require("dotenv/config");
 
 const sequelize = new Sequelize(
   process.env.DB,
-  process.env.USER,
+  process.env.USER_NAME,
   process.env.PASSWORD,
   {
     host: process.env.HOST,

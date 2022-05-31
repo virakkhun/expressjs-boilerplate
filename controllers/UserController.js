@@ -1,25 +1,33 @@
 const User = require("../models/User");
+const userSchema = require("../validation/userRequest");
 
 const createUser = async (req, res) => {
-  if (!req.body.person.firstName) {
-    res.status(404).json({
-      message: "Can not be found!!",
-    });
-    return;
-  }
+  const { body } = req;
 
-  const user = {
-    firstName: req.body.person.firstName ? req.body.person.firstName : "John",
-    lastName: req.body.person.lastName ? req.body.person.lastName : "Doe",
-  };
+  const { error } = userSchema.validate(body);
 
-  const result = await User.create(user);
-  if (result) {
-    res.status(200).json(result);
+  if (!error) {
+    const user = {
+      firstName: body.firstName,
+      lastName: body.lastName,
+      password: body.password,
+      email: body.email,
+      gender: body.gender,
+      age: body.age,
+    };
+
+    const result = await User.create(user);
+    if (result) {
+      res.status(200).json(result);
+    } else {
+      res.status(500).json({
+        message: "Error!!!",
+      });
+    }
   } else {
-    res.status(500).json({
-      message: "Error!!!",
-    });
+    const err = error.details[0].message;
+
+    res.status(200).json({ message: err });
   }
 };
 
@@ -38,7 +46,7 @@ const getAllUser = async (req, res) => {
 const getSingleUser = async (req, res) => {
   const user = await User.findAll({
     where: {
-      firstName: req.body.firstName,
+      firstName: body.firstName,
     },
   });
 

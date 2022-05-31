@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const db = require("./database/config.db");
 
-const helloRoute = require("./routes/userRoute");
+const _userRoute = require("./routes/userRoute");
 
 const corsOptions = {
   origin: process.env.CORS_URL,
@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/user", helloRoute);
+app.use("/user", _userRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

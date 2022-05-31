@@ -3,7 +3,7 @@ const UserController = require("../controllers/UserController");
 const router = express.Router();
 
 // you are going to remove this later.
-router.post("/:person", UserController.createUser);
+router.post("/", UserController.createUser);
 router.get("/", UserController.getAllUser);
 router.get("/:firstName", UserController.getSingleUser);
 
