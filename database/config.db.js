@@ -16,7 +16,7 @@ const connect = async () => {
     await sequelize.authenticate();
     console.log("Successfully connected");
   } catch (error) {
-    console.log("Connection denied: " + error);
+    console.log("Connection denied: " + error.message);
   }
 };
 
