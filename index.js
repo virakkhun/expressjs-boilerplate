@@ -4,19 +4,21 @@ const cors = require("cors");
 const db = require("./database/config.db");
 
 const _userRoute = require("./routes/userRoute");
+const _postRoute = require("./routes/postRoute");
 
 const corsOptions = {
   origin: process.env.CORS_URL,
 };
 
-db.connect(cors(corsOptions));
+db.connect();
 db.sequelize.sync();
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/user", _userRoute);
+app.use("/post", _postRoute);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

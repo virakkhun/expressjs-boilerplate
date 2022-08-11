@@ -52,7 +52,9 @@ const login = async (req, res) => {
   });
   if (!error) {
     const user = await User.findOne({
-      email: email,
+      where: {
+        email: email,
+      },
     });
 
     const isCorrect = await bcrypt.compareSync(password, user.password);
