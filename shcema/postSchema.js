@@ -10,6 +10,12 @@ const PostSchema = {
   desc: {
     type: DataTypes.STRING,
   },
+  images: {
+    type: DataTypes.STRING,
+  },
+  like: {
+    type: DataTypes.INTEGER,
+  },
 };
 
 module.exports = PostSchema;
